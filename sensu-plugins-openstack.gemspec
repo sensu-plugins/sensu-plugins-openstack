@@ -38,6 +38,7 @@ Gem::Specification.new do |s|
   s.version                = SensuPluginsOpenstack::Version::VER_STRING
 
   s.add_runtime_dependency 'sensu-plugin',      '1.1.0'
+  s.add_runtime_dependency 'mysql2',            '0.3.18'
 
   s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
   s.add_development_dependency 'rubocop',                   '~> 0.30'
