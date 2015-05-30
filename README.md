@@ -10,7 +10,6 @@
 ## Functionality
 
 ## Files
-
 * bin/check_ceilometer-agent-central.sh
 * bin/check_ceilometer-agent-compute.sh
 * bin/check_ceilometer-api.sh
