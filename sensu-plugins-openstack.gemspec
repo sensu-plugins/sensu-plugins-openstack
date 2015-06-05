@@ -17,7 +17,6 @@ Gem::Specification.new do |s|
   s.date                   = Date.today.to_s
   s.description            = 'Sensu plugins for openstack'
   s.email                  = '<sensu-users@googlegroups.com>'
-  s.executables            << 'keystone/keystone-token-metrics.rb'
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE README.md CHANGELOG.md)
   s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-openstack'
   s.license                = 'MIT'
@@ -38,7 +37,6 @@ Gem::Specification.new do |s|
   s.version                = SensuPluginsOpenstack::Version::VER_STRING
 
   s.add_runtime_dependency 'sensu-plugin',      '1.1.0'
-  s.add_runtime_dependency 'mysql2',            '0.3.18'
 
   s.add_development_dependency 'codeclimate-test-reporter', '~> 0.4'
   s.add_development_dependency 'rubocop',                   '~> 0.30'
