@@ -2,6 +2,7 @@
 
 # #RED
 from argparse import ArgumentParser
+from os import getenv
 import socket
 import time
 
@@ -14,10 +15,10 @@ def output_metric(name, value):
 
 def main():
     parser = ArgumentParser()
-    parser.add_argument('-u', '--user', default='admin')
-    parser.add_argument('-p', '--password', default='admin')
-    parser.add_argument('-t', '--tenant', default='admin')
-    parser.add_argument('-a', '--auth-url', default='http://localhost:5000/v2.0')
+    parser.add_argument('-u', '--user', default=getenv('OS_USERNAME', 'admin'))
+    parser.add_argument('-p', '--password', default=getenv('OS_PASSWORD', 'admin'))
+    parser.add_argument('-t', '--tenant', default=getenv('OS_TENANT_NAME', 'admin'))
+    parser.add_argument('-a', '--auth-url', default=getenv('OS_AUTH_URL', 'http://localhost:5000/v2.0'))
     parser.add_argument('-S', '--service-type', default='compute')
     parser.add_argument('-s', '--scheme', default=DEFAULT_SCHEME)
     args = parser.parse_args()
