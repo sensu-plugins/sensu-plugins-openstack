@@ -6,8 +6,9 @@ from os import getenv
 import socket
 import time
 
-from novaclient.v3 import Client
+from novaclient.client import Client
 
+NOVA_API_VERSION = '2'
 DEFAULT_SCHEME = '{}.nova.states'.format(socket.gethostname())
 
 def output_metric(name, value):
@@ -23,7 +24,7 @@ def main():
     parser.add_argument('-s', '--scheme', default=DEFAULT_SCHEME)
     args = parser.parse_args()
 
-    client = Client(args.user, args.password, args.tenant, args.auth_url, service_type=args.service_type)
+    client = Client(NOVA_API_VERSION, args.user, args.password, args.tenant, args.auth_url, service_type=args.service_type)
 
     servers = client.servers.list()
 
