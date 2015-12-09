@@ -15,7 +15,9 @@ Gem::Specification.new do |s|
   s.authors                = ['Sensu-Plugins and contributors']
   s.cert_chain             = ['certs/sensu-plugins.pem']
   s.date                   = Date.today.to_s
-  s.description            = 'Sensu plugins for openstack'
+  s.description            = 'This plugin provies native OpenStack instrumentation for monitoring and metrics
+                              collection, including: service health and metrics from Ceilometer, Keystone,
+                              Neutron, and Nova.'
   s.email                  = '<sensu-users@googlegroups.com>'
   s.files                  = Dir.glob('{bin,lib}/**/*') + %w(LICENSE README.md CHANGELOG.md)
   s.homepage               = 'https://github.com/sensu-plugins/sensu-plugins-openstack'
