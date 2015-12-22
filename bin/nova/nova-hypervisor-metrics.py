@@ -54,5 +54,10 @@ def main():
             if key in METRIC_KEYS:
                 output_metric('{}.{}.{}'.format(args.scheme, hv.hypervisor_hostname, key), value)
 
+    if not args.host:
+        for key, value in client.hypervisor_stats.statistics().to_dict().iteritems():
+            output_metric('{}.{}.{}'.format(args.scheme, 'total', key), value)
+
+
 if __name__ == '__main__':
     main()
