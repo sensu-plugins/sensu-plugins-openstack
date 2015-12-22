@@ -5,9 +5,13 @@ This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachang
 
 ## Unreleased
 
+## [0.1.0] - 2015-12-21
+### Added
+- Added aggregate metrics for all hypervisors to nova-hypervisor-metrics.py
+
 ## [0.0.5] - 2015-12-09
 ### Fixed
- - no module named v3 in novaclient
+- no module named v3 in novaclient
 
 ## [0.0.4] - 2015-09-29
 ### Changed
