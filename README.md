@@ -1,6 +1,6 @@
 ## Sensu-Plugins-openstack
 
-[ ![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-openstack.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-openstack)
+[![Build Status](https://travis-ci.org/sensu-plugins/sensu-plugins-openstack.svg?branch=master)](https://travis-ci.org/sensu-plugins/sensu-plugins-openstack)
 [![Gem Version](https://badge.fury.io/rb/sensu-plugins-openstack.svg)](http://badge.fury.io/rb/sensu-plugins-openstack)
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-openstack/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-openstack)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-openstack/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-openstack)
