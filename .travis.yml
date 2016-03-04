@@ -16,16 +16,19 @@ notifications:
     on_failure: always
 script:
 - bundle exec rake default
+- gem build sensu-plugins-openstack.gemspec
+- gem install sensu-plugins-openstack-*.gem
 deploy:
   provider: rubygems
   api_key:
-    secure: Ou4i7J9Lb3lD66847t93m+algByhD+abKCUHG2bq3T8xnGavhoBNqr/AqlZEAZRmgQ60deAbpSiiy8p8nqhd9iSJk4y67S88oi/Y/JYs3zHY7nn6qBLQ0Bz88mfm/TKOoUyRAihpuLw1gODqv5A/xDRTa3OKT4Wiy8GkY6Uuul4=
+    secure: KKGzfXVqHdzrg50ZeThjhNtI46+TptC6q3HEQi1+xsHFA9Mg5FDE4iezWRFy1PShOh4TiH68jeLsI2L88cdXGQneTJ1tf71k+62+H4iv1ofoz/roT013QQCyMvgEjTklHM1YeNtqYv/v2phbOLonvevcxFeeXC4Ubuh+yIHwFTs=
   gem: sensu-plugins-openstack
   on:
     tags: true
-    all_branches: true
+    repo: sensu-plugins/sensu-plugins-openstack
+     all_branches: true
     rvm: 1.9.3
     rvm: 2.0
     rvm: 2.1
     rvm: 2.2
-    repo: sensu-plugins/sensu-plugins-openstack
+

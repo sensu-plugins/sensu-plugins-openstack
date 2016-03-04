@@ -5,7 +5,6 @@
 [![Code Climate](https://codeclimate.com/github/sensu-plugins/sensu-plugins-openstack/badges/gpa.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-openstack)
 [![Test Coverage](https://codeclimate.com/github/sensu-plugins/sensu-plugins-openstack/badges/coverage.svg)](https://codeclimate.com/github/sensu-plugins/sensu-plugins-openstack)
 [![Dependency Status](https://gemnasium.com/sensu-plugins/sensu-plugins-openstack.svg)](https://gemnasium.com/sensu-plugins/sensu-plugins-openstack)
-[![Codeship Status for sensu-plugins/sensu-plugins-openstack](https://codeship.com/projects/c35bcdc0-db3b-0132-cb23-0eed4ec53b27/status?branch=master)](https://codeship.com/projects/79576)
 
 ## Functionality
 
